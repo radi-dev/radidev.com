@@ -8,9 +8,7 @@ export const Navigation: React.FC = () => {
 	const router = useRouter()
 
 	return (
-		<nav >
-			<div
-				className="fixed flex flex-col right-[90lvw] text-mid_light font-extralight text-xl bottom-0 items-center  h-[60dvh]  justify-start gap-10 z-50 bg-sla te-100 w-[10vw]"
+		<nav className="fixed flex flex-col text-mid_light font-extralight text-xl bottom-0 items-center h-[60dvh] justify-start gap-10 z-50 w-[5vw]"
 			>
 				<button
 					onClick={() => router.back()}
@@ -38,8 +36,7 @@ export const Navigation: React.FC = () => {
 				<div className="w-[0.5px] bg-primary h-full"></div>
 
 
-				</div>
-			{/* </div> */}
+
 		</nav>
 	);
 };

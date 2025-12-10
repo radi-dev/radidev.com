@@ -14,8 +14,7 @@ export const metadata: Metadata = {
   description: "Co-founder of unkey.dev and founder of planetfall.io",
   openGraph: {
     title: "chronark.com",
-    description:
-      "Co-founder of unkey.dev and founder of planetfall.io",
+    description: "Co-founder of unkey.dev and founder of planetfall.io",
     url: "https://chronark.com",
     siteName: "chronark.com",
     images: [
@@ -68,19 +67,17 @@ export default function RootLayout({
         <Analytics />
       </head>
       <body
-        className={`bg-secondary font-1 text-2xl sm:text-xl w-screen ${process.env.NODE_ENV === "development" ? "debug-screens" : undefined
-          }`}
-      >  <div className="fixed top-0 left-0 w-screen h-lvh z-[-1] flex justify-around items-stretch">
-          <div className="line"></div>
-          <div className="line"></div>
+        className={`bg-secondary font-1 text-2xl sm:text-xl w-screen overflow-x-hidden ${process.env.NODE_ENV === "development" ? "debug-screens" : undefined
+          }`}>
+        <div className="fixed top-0 left-0 w-[5lvw] h-lvh z-[-1] flex justify-end"><div className="line"></div></div>
+        <div className="fixed top-0 left-[5lvw] w-[95lvw] h-lvh z-[-1] flex justify-evenly">
           <div className="line"></div>
           <div className="line"></div>
           <div className="line"></div>
         </div>
         <Header />
         <Navigation />
-        <div className=" mx-[10vw]">
-          {children}</div>
+        <div className=" mx-[5lvw]">{children}</div>
       </body>
     </html>
   );
