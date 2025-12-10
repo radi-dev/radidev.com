@@ -10,12 +10,7 @@ export const Navigation: React.FC = () => {
 	return (
 		<nav className="fixed flex flex-col text-mid_light font-3 font-light text-sm lg:text-lg bottom-0 items-center h-[60dvh] justify-start gap-10 z-50 w-[5vw]"
 			>
-				<button
-					onClick={() => router.back()}
-					className="duration-200 text-light hover:text-accent"
-				>
-					<ArrowLeft className="w-6 h-6 " />
-				</button>
+
 
 
 				<div className="-rotate-90 aspect-square items-center justify-center flex"><Link
@@ -32,8 +27,14 @@ export const Navigation: React.FC = () => {
 				CONTACT
 						</Link>
 				</div>
+			<button
+				onClick={() => router.back()}
+				className="duration-200  hover:text-accent"
+			>
+				<ArrowLeft className="w-6 h-6 " />
+			</button>
 
-				<div className="w-[0.5px] bg-primary h-full"></div>
+			<div className="w-[0.5px] bg-accent h-full"></div>
 
 
 
