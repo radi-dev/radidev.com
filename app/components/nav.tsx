@@ -1,55 +1,50 @@
+
 "use client";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
-import React, { useEffect, useRef, useState } from "react";
+import { useRouter } from 'next/navigation'
 
 export const Navigation: React.FC = () => {
-	const ref = useRef<HTMLElement>(null);
-	const [isIntersecting, setIntersecting] = useState(true);
-
-	useEffect(() => {
-		if (!ref.current) return;
-		const observer = new IntersectionObserver(([entry]) =>
-			setIntersecting(entry.isIntersecting),
-		);
-
-		observer.observe(ref.current);
-		return () => observer.disconnect();
-	}, []);
+	const router = useRouter()
 
 	return (
-		<header ref={ref}>
+		<nav >
 			<div
-				className={`fixed inset-x-0 top-0 z-50 backdrop-blur  duration-200 border-b  ${
-					isIntersecting
-						? "bg-zinc-900/0 border-transparent"
-						: "bg-zinc-900/500  border-zinc-800 "
-				}`}
+				className="fixed flex flex-col right-[90lvw] text-light font-extralight bottom-0 items-center  h-[60dvh]  justify-start gap-10 z-50 bg -slate-100"
 			>
-				<div className="container flex flex-row-reverse items-center justify-between p-6 mx-auto">
-					<div className="flex justify-between gap-8">
-						<Link
+				<button
+					onClick={() => router.back()}
+					className="duration-200 text-light hover:text-accent"
+				>
+					<ArrowLeft className="w-6 h-6 " />
+				</button>
+
+
+				<div className="-rotate-90 aspect-square items-center justify-center flex"><Link
 							href="/projects"
-							className="duration-200 text-zinc-400 hover:text-zinc-100"
+					className="duration-200 hover:text-accent"
 						>
 							Projects
 						</Link>
-						<Link
+				</div>
+				<div className="-rotate-90 aspect-square items-center justify-center flex"><Link
 							href="/contact"
-							className="duration-200 text-zinc-400 hover:text-zinc-100"
+					className="duration-200 hover:text-accent"
 						>
 							Contact
 						</Link>
-					</div>
-
-					<Link
-						href="/"
-						className="duration-200 text-zinc-300 hover:text-zinc-100"
-					>
-						<ArrowLeft className="w-6 h-6 " />
-					</Link>
 				</div>
-			</div>
-		</header>
+
+				<div className="w-[0.5px] bg-primary h-full"></div>
+
+
+
+
+
+
+
+				</div>
+			{/* </div> */}
+		</nav>
 	);
 };

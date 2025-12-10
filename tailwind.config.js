@@ -23,6 +23,8 @@ module.exports = {
         accent: "#BFDBDE",
         dark: "#121212",
         light: "#F8FAFC",
+        mid_dark: "#444444",
+        mid_light: "#a1a1aa",
       },
       typography: {
         DEFAULT: {

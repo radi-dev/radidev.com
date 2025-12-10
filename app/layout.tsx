@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import LocalFont from "next/font/local";
 import { Metadata } from "next";
 import { Analytics } from "./components/analytics";
+import { Navigation } from "./components/nav";
+import Header from "./components/header";
 
 export const metadata: Metadata = {
   title: {
@@ -66,7 +68,7 @@ export default function RootLayout({
         <Analytics />
       </head>
       <body
-        className={`bg-secondary ${process.env.NODE_ENV === "development" ? "debug-screens" : undefined
+        className={`bg-secondary font-1 text-2xl sm:text-xl w-screen ${process.env.NODE_ENV === "development" ? "debug-screens" : undefined
           }`}
       >  <div className="fixed top-0 left-0 w-screen h-lvh z-[-1] flex justify-around items-stretch">
           <div className="line"></div>
@@ -75,7 +77,10 @@ export default function RootLayout({
           <div className="line"></div>
           <div className="line"></div>
         </div>
-        {children}
+        <Header />
+        <Navigation />
+        <div className=" mx-[10vw]">
+          {children}</div>
       </body>
     </html>
   );
