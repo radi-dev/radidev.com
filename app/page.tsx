@@ -10,23 +10,23 @@ export default function Home() {
       {/* <div id="Home" className="fixed h-[85lvh] top-[max(100px,15lvh)] flex flex-col justify-center items-center w-[95lvw] "> */}
       <div id="Home" className="h-[85lvh] flex flex-col justify-center items-center w-full">
 
-      <Particles
-        className="absolute inset-0 -z-10 animate-fade-in"
-        quantity={100}
-      />
+        <Particles
+          className="absolute inset-0 -z-10 animate-fade-in"
+          quantity={100}
+        />
 
-      <div className="font-2 flex items-start p-2 animate-fade-in w-full">
-        <div className=" font-black font-2 text-end text-2xl lg:text-4xl">
-          <p className="me-10 text-light">HELLO THERE!</p>
-          <p className=" text-accent mt-12">I AM</p>
+        <div className="font-2 flex items-start p-2 animate-fade-in w-full">
+          <div className=" font-black font-2 text-end text-2xl lg:text-4xl">
+            <p className="me-10 text-light">HELLO THERE!</p>
+            <p className=" text-accent mt-2 lg:mt-12">I AM</p>
+          </div>
         </div>
-      </div>
 
 
-      {/* <div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden"> */}
+        {/* <div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden"> */}
         <div className="hidden w-screen h-px animate-glow md:block animate-fade-left bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
         <h1
-        className="text-transparent duration-1000 bg-primary text-edge-outline animate-title font-3 whitespace-nowrap bg-clip-text font-black cursor-default flex justify-around items-center text-[22vw] max-h-[20vw] w-full"
+          className="text-transparent duration-1000 bg-primary text-edge-outline animate-title font-3 whitespace-nowrap bg-clip-text font-black cursor-default flex justify-around items-center text-[22vw] max-h-[20vw] w-full"
         >
 
 
@@ -40,22 +40,22 @@ export default function Home() {
 
         <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
         <article>
-          <div className="mb- 16 text-left animate-fade-in pt-5 md:w-[80lvw] lg:w-[40lvw] ml-0 lg:ml-[40lvw]">
-            <h2 className="text-sm text-mid_light ">
-              👨🏽‍💻 I'm building{" "}
-            <Link
-              target="_blank"
-              href="https://advarts.com"
-              className="underline duration-500 text-accent hover:text-zinc-300"
-            >
-              AdvArts
-            </Link> to streamline lead acquisition using AI-generated content.
-              <p>💼 Open for commisions</p>
-          </h2>
+          <div className="text-left animate-fade-in pt-5 md:w-[80lvw] lg:w-[40lvw] ml-4 lg:ml-[40lvw] font-mono font-extralight">
+            <h2 className="text-xs lg:text-sm text-mid_light ">
+              <p>- 👨🏽‍💻 I'm building{" "}
+                <Link
+                  target="_blank"
+                  href="https://advarts.com"
+                  className="underline duration-500 text-accent hover:text-zinc-300"
+                >
+                  AdvArts
+                </Link> to streamline lead acquisition using AI-generated content.</p>
+              <p>- 💼 Open for commisions</p>
+            </h2>
 
-        </div>
+          </div>
 
-      </article>
+        </article>
       </div>
 
 

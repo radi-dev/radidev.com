@@ -8,7 +8,7 @@ export const Navigation: React.FC = () => {
 	const router = useRouter()
 
 	return (
-		<nav className="fixed flex flex-col text-mid_light font-extralight text-xl bottom-0 items-center h-[60dvh] justify-start gap-10 z-50 w-[5vw]"
+		<nav className="fixed flex flex-col text-mid_light font-3 font-light text-sm lg:text-lg bottom-0 items-center h-[60dvh] justify-start gap-10 z-50 w-[5vw]"
 			>
 				<button
 					onClick={() => router.back()}
@@ -22,14 +22,14 @@ export const Navigation: React.FC = () => {
 							href="/projects"
 					className="duration-200 hover:text-accent"
 						>
-							Projects
+				PROJECTS
 						</Link>
 				</div>
 				<div className="-rotate-90 aspect-square items-center justify-center flex"><Link
 							href="/contact"
 					className="duration-200 hover:text-accent"
 						>
-							Contact
+				CONTACT
 						</Link>
 				</div>
 
