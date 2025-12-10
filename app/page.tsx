@@ -34,16 +34,10 @@ export default function Home() {
         </h1>
 
         <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
-
-      </div>
-
-
-      <article
-      // className="relative md:left-[10lvw] lg:left-[50lvw] pt-5 md:w-[80lvw] lg:w-[40lvw]  text-light font-light p-1 text-2xl"
-      >
-        <div className="my-16 text-left animate-fade-in pt-5 md:w-[80lvw] lg:w-[40lvw] ml-[10lvw] lg:ml-[50lvw]">
-          <h2 className="text- sm text-mid_light ">
-            I'm building{" "}
+        <article>
+          <div className="mb- 16 text-left animate-fade-in pt-5 md:w-[80lvw] lg:w-[40lvw] ml-0 lg:ml-[40lvw]">
+            <h2 className="text-sm text-mid_light ">
+              👨🏽‍💻 I'm building{" "}
             <Link
               target="_blank"
               href="https://advarts.com"
@@ -51,45 +45,23 @@ export default function Home() {
             >
               AdvArts
             </Link> to streamline lead acquisition using AI-generated content.
-            <p>Open for commisions</p>
+              <p>💼 Open for commisions</p>
           </h2>
 
         </div>
 
       </article>
+      </div>
+
+
+
 
 
 
 
 
     </section>);
-  {  /*  <div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gradient-to-tl from-secondary via-zinc-600/20 to-secondary">
 
-      <div className="hidden w-screen h-px animate-glow md:block animate-fade-left bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
-      <Particles
-        className="absolute inset-0 -z-10 animate-fade-in"
-        quantity={100}
-      />
-      <h1 className="py-3.5 px-0.5 z-10 text-4xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text ">
-       Ra
-      </h1>
-
-      <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
-      <div className="my-16 text-center animate-fade-in">
-        <h2 className="text-sm text-zinc-500 ">
-          I'm building{" "}
-          <Link
-            target="_blank"
-            href="https://advarts.com"
-            className="underline duration-500 hover:text-zinc-300"
-          >
-            unkey.dev
-          </Link> to solve API authentication and authorization for developers.
-        </h2>
-      </div>
-    </div>
-    */
-  }
 
 
 }

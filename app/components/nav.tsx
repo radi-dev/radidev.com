@@ -10,7 +10,7 @@ export const Navigation: React.FC = () => {
 	return (
 		<nav >
 			<div
-				className="fixed flex flex-col right-[90lvw] text-light font-extralight bottom-0 items-center  h-[60dvh]  justify-start gap-10 z-50 bg -slate-100"
+				className="fixed flex flex-col right-[90lvw] text-mid_light font-extralight text-xl bottom-0 items-center  h-[60dvh]  justify-start gap-10 z-50 bg-sla te-100 w-[10vw]"
 			>
 				<button
 					onClick={() => router.back()}
@@ -36,11 +36,6 @@ export const Navigation: React.FC = () => {
 				</div>
 
 				<div className="w-[0.5px] bg-primary h-full"></div>
-
-
-
-
-
 
 
 				</div>
