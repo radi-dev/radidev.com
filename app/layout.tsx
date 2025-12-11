@@ -69,12 +69,20 @@ export default function RootLayout({
       <body
         className={`bg-secondary font-1 text-2xl sm:text-xl w-screen overflow-x-hidden ${process.env.NODE_ENV === "development" ? "debug-screens" : undefined
           }`}>
-        <div className="fixed top-0 left-0 w-[5lvw] h-lvh z-[-1] flex justify-end"><div className="line"></div></div>
+        <div className="fixed top-0 left-0 w-[5lvw] h-lvh z-[-1] flex justify-end">
+          <div className="line"></div>
+        </div>
         <div className="fixed top-0 left-[5lvw] w-[95lvw] h-lvh z-[-1] flex justify-evenly">
           <div className="line"></div>
           <div className="line"></div>
           <div className="line"></div>
         </div>
+        <div className="fixed bg-dark w-[max(20lvh,20lvw)] h-[max(20lvh,20lvw)] rounded-full z-[-1] opacity-20 shadow-2xl -ml-32">
+        </div>
+        <div
+          className="fixed bg-dark w-[max(20lvh,20lvw)] h-[max(20lvh,20lvw)] rounded-full z-[-1] opacity-20 shadow-2xl -ml-32 mt-12 left-1/2 top-1/3">
+        </div>
+
         <Header />
         <Navigation />
         <div className=" mx-[5lvw] w-[95lvw]">{children}</div>
