@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     siteName: "radidev.com",
     images: [
       {
-        url: "https://radidev.com/og.png",
+        url: "https://radidev.com/RADI.png",
         width: 1920,
         height: 1080,
       },

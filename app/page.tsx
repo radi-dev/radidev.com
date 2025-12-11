@@ -10,7 +10,7 @@ export default function Home() {
 
         <Particles
           className="absolute inset-0 -z-10 animate-fade-in"
-          quantity={100}
+        quantity={60}
         />
 
         <div className="font-2 flex items-start p-2 animate-fade-in w-full">
