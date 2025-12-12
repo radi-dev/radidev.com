@@ -6,7 +6,7 @@ import Particles from "./components/particles";
 
 export default function Home() {
   return (
-    <section id="Home" className="fixed top-0 left-[5lvw] h-[90lvh] md:h-[100lvh] w-[95lvw] flex flex-col pt-[max(100px,15lvh)] justify-around items-center overflow-hidden">
+    <section id="Home" className="fixed top-0 left-[5lvw] h-[90lvh] md:h-[100lvh] w-[95lvw] max-w-[95%] flex flex-col pt-[max(100px,15lvh)] justify-around items-center overflow-hidden">
 
         <Particles
           className="absolute inset-0 -z-10 animate-fade-in"
